@@ -1,8 +1,8 @@
 library(dplyr)
 library(lubridate)
 library(gdata)
-setwd("/Users/josethenier/Downloads/MODELO720")
-cuentas<- list.files('/Users/josethenier/Downloads/MODELO720/xlsx')
+setwd("/Users/MODELO720")
+cuentas<- list.files('/Users/MODELO720/xlsx')
 #función para rellenar los NA con el valor previo
 rellenanas<- function(x) {
   for(i in 1:nrow(x)) {
