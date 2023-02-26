@@ -80,10 +80,3 @@ for (i in 1:length(cuentas)) {
   write.csv(resultados, paste(cuenta,"resultados.csv"))
 }
 
-
-cuenta="5312812.xlsx"
-data<- read.xls(paste0("xlsx/", cuenta))
-index<- which(data == c("Deals"), arr.ind=TRUE)
-start<-as.numeric(index[1,1])
-index2<-which(data == c("Balance:"), arr.ind=TRUE)
-finish=index2[1,1]
